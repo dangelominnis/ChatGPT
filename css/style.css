@@ -46,6 +46,10 @@ body {
     --gradient-secondary: linear-gradient(to top left, var(--color-primary), var(--color-primary), var(--color-secondary));
 }
 
+span {
+    color: var(--color-purple);
+}
+
 /* New */
 /* Head */
 .head {
@@ -70,18 +74,27 @@ body {
 
 .head-box h1 {
     color: var(--color-black);
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 500;
     text-align: center;
-    line-height: 1.2;
-    margin-bottom: 6rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    padding: 0 8rem;
 }
 
 .head-box h1 span {
     color: var(--color-purple);
 }
 
+.head-box h4 {
+    color: var(--color-light-purple);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
 .header-button {
+    margin-top: 4rem;
 }
 
 .head-quote {
@@ -149,11 +162,14 @@ body {
     /* margin: 2rem; */
     border-radius: 32px;
     margin-right: 6rem;
+    padding: 6rem;
+    /* height: 100%; */
 }
 
 .fact-image img {
-    width: 100%;
+    width: 60%;
     height: auto;
+    margin-left: 6rem;
 }
 
 .fact-databox {
@@ -161,8 +177,13 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: space-between;
+    background-color: var(--color-white);
+    border-radius: 32px;
 
     flex-basis: 60%;
+    /* height: 100%; */
+    /* margin-bottom: 6rem; */
+    padding: 6rem;
 }
 
 .fact-textbox {
@@ -170,11 +191,8 @@ body {
     flex-direction: column;
     justify-content: left;
     align-items: left;
-    background-color: var(--color-white);
-    border-radius: 32px;
-    flex-basis: 60%;
-    margin-bottom: 6rem;
-    padding: 6rem;
+    /* flex-basis: 60%; */
+
 }
 
 .fact-textbox h2 {
@@ -183,11 +201,16 @@ body {
     letter-spacing: ;
     font-weight: 500;
     line-height: 1.3;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .fact-textbox p {
-    
+    color: var(--color-black);
+    font-size: 1.6rem;
+    letter-spacing: ;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
 }
 
 .fact-statbox {
@@ -196,7 +219,7 @@ body {
     align-items: center;
     background-color: var(--color-black);
     border-radius: 32px;
-    flex-basis: 40%;
+    /* flex-basis: 40%; */
     padding: 6rem;
 }
 
@@ -238,7 +261,7 @@ color: var(--color-white);
 
 .summary-box p {
     color: var(--color-black);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     letter-spacing: ;
     font-weight: 400;
     line-height: 1.6;
@@ -290,8 +313,8 @@ color: var(--color-white);
 .trait-strength {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     flex: 1;
     /* flex-basis: 50%; */
     background-color: var(--color-white);
@@ -304,8 +327,9 @@ color: var(--color-white);
 
 .trait-item {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .trait-item i {
@@ -315,14 +339,18 @@ color: var(--color-white);
 }
 
 .trait-item h4 {
-
+    /* color: var(--color-black); */
+    font-size: 1.6rem;
+    letter-spacing: ;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 .trait-weakness {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     flex: 1;
     /* flex-basis: 50%; */
     background-color: var(--color-black);
@@ -402,11 +430,10 @@ color: var(--color-white);
 
 .gap-fact p {
     color: var(--color-black);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     letter-spacing: ;
     font-weight: 400;
     line-height: 1.6;
-    margin-bottom: 1rem;
     text-align: left;
 }
 
@@ -688,10 +715,10 @@ color: var(--color-white);
 
 .nav__link {
     color: var(--color-black);
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.6;
-    letter-spacing: .5px;
+    /* letter-spacing: .5px; */
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
     text-decoration: none;
     padding: 1rem 0;
@@ -702,7 +729,8 @@ color: var(--color-white);
     opacity: 0.8;
 }
 
-.nav .btn-black-transparent {
+.nav .btn-black {
+    font-size: 1.4rem;
     padding: 1.1rem 1.75rem;
     margin-right: 1rem;
 }
